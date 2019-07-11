@@ -1,0 +1,16 @@
+version: '3.5'
+services:
+  bitbus:
+    image: interplanaria/bitbus
+    stdin_open: true
+    volumes:
+      - ./:/mnt
+    entrypoint: ["/mnt/run.sh"]
+    ports:
+      - "127.0.0.1:3007:3007"
+    networks:
+      - bitbus
+networks:
+  bitbus:
+    name: bitbus
+
