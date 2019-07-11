@@ -20,6 +20,10 @@ Follow the instruction here to install: https://docs.docker.com/compose/install/
 
 # Usage
 
+Here's an example usage:
+
+![bitbusbox](bitbusbox.gif)
+
 ## 1. Clone
 
 ```
