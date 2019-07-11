@@ -23,10 +23,10 @@ Follow the instruction here to install: https://docs.docker.com/compose/install/
 ## 1. Clone
 
 ```
-git clone https://github.com/interplanaria/busbox.git
+git clone https://github.com/interplanaria/bitbusbox.git
 ```
 
-## 2. Write Bus file
+## 2. Write a Bus file
 
 Write a Bus file in the same folder as `docker-compose.yml`.
 
@@ -42,6 +42,18 @@ Here's an example. Save this to `bus.json`:
     "project": { "out.s2": 1, "out.s3": 1 }
   }
 }
+```
+
+The resulting folder structure should look something like (Note the `bus.json` at the end):
+
+```
+./
+  Dockerfile
+  README.md
+  busbox.png
+  docker-compose.yml
+  run.sh
+  bus.json
 ```
 
 ## 3. Start
